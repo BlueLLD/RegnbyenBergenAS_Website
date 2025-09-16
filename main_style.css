@@ -1,3 +1,9 @@
+:root{
+  --blue1:rgb(0, 174, 255);
+  --blue2:rgb(0, 106, 255);
+  --background-color:"";
+}
+
 body{
     background-color: rgb(215, 250, 246);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -7,4 +13,82 @@ body{
 }
 #id_element{
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.language_element b{
+  width: 100%;
+  height: 100%;
+}
+
+.clickable:hover{
+  background: color-mix(in srgb, var(--blue2), white 30%);
+}
+.clickable:active{
+  background: color-mix(in srgb, var(--blue2), white 30%);
+}
+
+#top_bar{
+  height: 80px;
+  background: var(--blue2);
+  display: grid;
+  grid-template-areas:
+  "logo . . . selection"
+}
+.logo{
+  width: 80px;
+  background-color: white;
+  border-radius: 5px;
+  grid-area: logo;
+
+}
+
+ul {
+  background: var(--blue2);
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  grid-area: selection;
+}
+
+li {
+  background: var(--blue2);
+  color: #fff;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+li a {
+  color: #fff;
+}
+
+li:hover {
+  background: var(--blue2);
+  cursor: pointer;
+}
+
+ul li ul {
+  background: var(--blue1);
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
 }
