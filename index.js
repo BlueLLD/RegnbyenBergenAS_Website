@@ -2,7 +2,7 @@
 const languages = data
 
 
-let current_language = localStorage.getItem("language")
+let current_language = localStorage.getItem("language") || "no"
 
 const england_button = document.getElementById("en")
 const norway_button = document.getElementById("no")
