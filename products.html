@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 60%;
+            right: -20%;
+            border-collapse: collapse;
+            border: 2px solid rgb(140 140 140);
+            font-family: sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        caption {
+            caption-side: bottom;
+            padding: 30px;
+            font-weight: bold;
+        }
+
+        thead,
+        tfoot {
+            background-color: rgb(228 240 245); 
+        }
+
+        th,
+        td {
+            border: 1px solid rgb(160 160 160);
+            padding: 8px 10px;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        tbody > tr:nth-of-type(even) {
+            background-color: rgb(237 238 242);
+        }
+
+        tfoot th {
+            text-align: right;
+        }
+
+        tfoot td {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<table>
+  <caption>
+    Midlertidlige Klesprodukter
+  </caption>
+
+  <thead>
+    <tr>
+      <th scope="col">Årstid</th>
+      <th scope="col">Sko</th>
+      <th scope="col">Bein</th>
+      <th scope="col">Overkropp</th>
+      <th scope="col">Hodeplagg</th>
+    </tr>
+  </thead>
+
+  <!-- Produkter -->
+  <tbody>
+    <tr>
+      <td>Vinter</td>
+      <th scope="row">Støvletter</th>
+      <td>Stilongs</td>
+      <td>Ullgenser</td>
+      <td>Øreklokker</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <th scope="row">Vintersko</th>
+      <td>Ullundertøy</td>
+      <td>Parkas</td>
+      <td>Lue</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <th scope="row">-</th>
+      <td>Vintersko</td>
+      <td>Snøbukse</td>
+      <td>Skjerf</td>
+    </tr>
+
+    <tr>
+      <td>Sommer</td>
+      <th scope="row">Fjellsko</th>
+      <td>Shorts</td>
+      <td>T-skjorte</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Høst</td>
+      <th scope="row">Joggesko</th>
+      <td>Strømper</td>
+      <td>Regnjakke</td>
+      <td>Bøttehatt</td>
+    </tr>
+
+    <tr>
+      <td>Vår</td>
+      <th scope="row">Chelsea boots</th>
+      <td>Jeans</td>
+      <td>Genser</td>
+      <td>Headset :)</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
