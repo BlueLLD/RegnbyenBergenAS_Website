@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      display: grid;
+    }
+
+    header {
+      display: flex;
+      align-items: flex-end;
+      gap:10px;
+      background: #003366;
+      color: #fff;
+      padding: 1rem;
+    }
+
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    header .tagline {
+      color:black;
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    .vannvett h2 {
+        font-variant: small-caps;
+        border-bottom: 1px solid black;
+        color:#0055a5;
+        text-align: center;
+    }
+
+    .vannvett h4 {
+        text-transform: uppercase;
+        font-size: 1em;
+        margin-bottom: 3px;
+
+    }
+
+    .vannvett li {
+        margin-bottom: 5px;
+    }
+
+    nav {
+      background: #0055a5;
+      padding: 0.5rem;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .section {
+        display: block;
+      padding: 2rem;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      background: #ccc;
+      display: block;
+    }
+
+    .rules {
+      list-style: decimal;
+      padding-left: 2rem;
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+
+    .team .person {
+      background: #f4f4f4;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    footer {
+      background: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="images/logo.png" style="height: 50px; filter:brightness(0)">
+  
+    <div class="tagline">Slagord / Tagline</div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Hjem</a></li>
+      <li><a href="#">Klær</a></li>
+      <li><a href="#">Bil og bolig</a></li>
+      <li><a href="products.html">Produkter</a></li>
+      <li><a href="#">Sølepytter</a></li>
+      <li><a href="#">Vannvett</a></li>
+      <li><a href="#">Sponsorer</a></li>
+      <li><a href="#">Om oss</a></li>
+    </ul>
+  </nav>
+
+  <section class="section vannvett">
+    <h2>Vannvettreglene</h2>
+    <ol>
+        <li>
+            <h4>Planlegg turen og meld fra hvor du går.</h4>
+            Sjekk at paraplyen ikke blåser vekk f&oslash;r du har gått 10 meter, og la folk vite hvor langt de må sende tørketrommel og varm kakao.
+        </li>
+        <li>
+            <h4>Tilpass turen etter evne og vannstand.</h4>
+            Er du under gjennomsnittlig lav kan det være lurt å holde seg unne Nygårdsparken etter styrtregn. Der blir det plutselig innsjø.
+        </li>
+        <li>
+            <h4>Ta hensyn til værmeldingen, men stol aldri helt på den.</h4>
+            Sol på Yr betyr bare at regnet kommer litt varmere.
+        </li>
+        <li>
+            <h4>Vær forberedt på plutselig skybrudd, også mellom butikk og buss.</h4>
+            Regnponcho i veska er like viktig som nøkler og mobil.
+        </li>
+        <li>
+            <h4>Ta med nødvendig utstyr for å kunne hjelpe deg selv og andre.</h4>
+            Ekstra sokker, kano til nødstilfeller, og husk uttrykket "Nei, det er jo bare litt høy luftfuktighet.".
+        </li>
+        <li>
+            <h4>Ta trygge veivalg - unngå brosteiner som blir glattere enn svigermors tunge.</h4>
+            Og ikke undervurder den farlige blandingen av paraply og sterk motvind.
+        </li>
+        <li>
+            <h4>Husk kart og kompass.</h4>
+            Når regnet slører utsikten, og mobilskjermen blir uresponsiv av vannet, kan du ende opp i Åsane i stedet for Årstad.</h4></li>
+        <li>
+            <h4>Vend i tide - det er ingen skam å snu.</h4>
+            Selv fiskere fra Lofoten hadde blitt inne hvis de visste hvor ille regnet i Bergen kan bli.
+        </li>
+        <li>
+            <h4>Spar på kreftene og søk ly om nødvendig.</h4>
+            F.eks. under tak ved Narvesen eller inne på en pub. En pils er ofte mer effektiv enn Gore-Tex.
+        </li>
+    </ol>
+  </section>
+
+  <footer>
+    &copy; 2025 Regnbyen AS - All rights reserved
+  </footer>
+</body>
+</html>
