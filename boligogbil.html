@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    header {
+      display: flex;
+      align-items: flex-end;
+      gap:10px;
+      background: #003366;
+      color: #fff;
+      padding: 1rem;
+    }
+
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    header .tagline {
+      color:black;
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    nav {
+      background: #0055a5;
+      padding: 0.5rem;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .section {
+      padding: 2rem;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      background: #ccc;
+      display: block;
+    }
+
+    .rules {
+      list-style: decimal;
+      padding-left: 2rem;
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+
+    .team .person {
+      background: #f4f4f4;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    footer {
+      background: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    table :nth-child(1) {
+        vertical-align: top;
+    }
+    table :nth-child(2) {
+        vertical-align: top;
+    }
+    table :nth-child(3) {
+        vertical-align: top;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="images/logo.png" style="height: 50px; filter:brightness(0)">
+  
+    <div class="tagline">For de med våte sokker og store drømmer</div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Hjem</a></li>
+      <li><a href="#">Tema 1</a></li>
+      <li><a href="#">Tema 2</a></li>
+      <li><a href="products.html">Produkter</a></li>
+      <li><a href="#">Galleri</a></li>
+      <li><a href="#">Vannvett</a></li>
+      <li><a href="#">Om oss</a></li>
+    </ul>
+  </nav>
+
+  <section class="bil">
+    <h2>Bolig og Bil</h2>
+        <p> 
+            Det å bo i Bergen kan være en utfordring når det kommer til regn og fuktighet.
+            Vi tilbyr løsninger for å beskytte både boliger og biler mot vær og vind.
+            <br><br>
+            Våre partnere tilbyr:
+            
+            <ul>
+                <li>Biler som passer klimaet</li>
+                <li>Verksted</li>
+                <li>Boligopppussing og vedlikehold</li>
+                <li>Megling</li>
+            </ul>
+        </p>
+
+
+        <h3>Biler som passer klimaet</h3>
+        <p> 
+            Her er noen bilmodeller som er godt tilegnet Regnbyen.
+        </p>
+        <table> 
+            <tr>
+                <th>Merke</th>
+                <th>Modell</th>
+                <th>Pris</th>
+                <th>Fordeler</th>
+                <th>Ulemper</th>
+            </tr>
+            <tr>
+                <td>Hyuandai</td>
+                <td>Kona Electric</td>
+                <td>340 000 kr</td>
+                <td>+ Etablert modell som har vært brukt i Norge lenge, mange reservedeler, god serviceinfrastruktur.<br>
+                    + Meget godt utstyrsnivå i nyere modeller, god rekkevidde (WLTP ~ 500+ km for Long Range) i forhold til pris.<br>
+                    + Komfort i by og på vei, relativt god plass til bagasje og passasjerer, brukbar totalvne.<br>
+                    + Prisnivået gjør at mange kan få “mye bil for pengene”.<br>
+                    + Forvarming, moderat strømforbruk, og gode vinteregenskaper med riktige dekk.</td>
+                <td>- Hurtigladingstopp (maks effekt) er ikke like høy som de aller raskeste elbilene. <br>
+                    - Når man velger større hjul eller mer utstyr, drar vekten og forbruket opp, rekkevidden faller mer vinterstid. <br>
+                    - Ikke firehjulsdrift (for de fleste varianter) - begrenser grepet på veldig isete / snødekte veier. <br>
+                    - Innvendig materialfølelse kan være noe enklere enn hos premiummerker. <br>
+                    - Skjerm-menyer etc. blir av noen opplevd som mindre intuitive.</td>
+            </tr>
+            <tr>
+                <td>Volvo</td>
+                <td>EX30</td>
+                <td>345 900 kr</td>
+                <td>+ Meget kompakt SUV som er lettmanøvrert i by, smale gater, trange parkeringsplasser.<br>
+                    + Moderne sikkerhetsfunksjoner og Volvo-kvalitet.<br>
+                    + Gode vinterhjulpakker finnes fra fabrikken - bedre grep og trygghet. <br>
+                    + Valgbar kjøremodus gir fleksibilitet etter vær og bruk. <br>
+                    + Lavere forbruk pga mindre vekt/størrelse enn store SUVer (i by & kupert terreng).</td>
+                <td>- Begrenset plass i noen varianter; for stor familie kan det bli trangt.<br>
+                    - Rekkevidden synker merkbart ved kaldt vær, og batterioppvarming blir viktig.<br>
+                    - Vinterdekk / piggfrie vs piggdekk-valg blir viktig.<br>
+                    - For de som kjører mye motorvei: tilbudet her ikke like optimalt som større elSUVer.<br>
+                    - Pris med alt ekstra (hjulpakke, utstyr) kan komme oppover.</td>
+            </tr>
+            <tr>
+                <td>Tesla</td>
+                <td>Model Y Long Range RWD</td>
+                <td>610 000 kr</td>
+                <td>+ God ladekapasitet og tilgang til Supercharger-nettverket som gjør langkjøring mer praktisk, også over fjell og mellom fjorder.<br>
+                    + Firehjulsdrift-versjoner gir bedre grep vinterstid (snø & is).<br>
+                    + Meget god varme, komfort, og forvarming gjør vinterkjøring mer komfortabel.<br>
+                    + God bagasjeplass og praktisk SUV-form kombinert med elbilfordeler.</td>
+                <td>- Høyere pris sammenlignet med mange andre elbiler.<br>
+                    - Kvalitetskontroll og byggekvalitet har vært kritisert i enkelte tilfeller.<br>
+                    - Service og reparasjoner kan være tidkrevende pga begrenset antall verksteder.<br>
+                    - Enkelte opplever at interiørmaterialene ikke er like luksuriøse som hos premiummerker.<br>
+                    - Størrelsen kan gjøre den mindre smidig i trange bymiljøer.</td>
+
+            </tr>
+         </table>
+    </section>
+
+
+  <section class="verksted">
+            <h3>Verksted</h3>
+            <p> 
+                Fixbil er den mest praktiske måten å ordnet eller sjekket bilen sin på. Verkstedene finner du i:
+                <ul>
+                    <li>Arna</li>
+                    <li>Åsane</li>
+                    <li>Damsgård</li>
+                    <li>Fana</li>
+                    <li>Knarvik</li>
+                    <li>Landås</li>
+                    <li>Møllendalsveien</li>
+                    <li>Nesttun</li>
+                    <li>Olsvik</li>
+                    <li>Sotra</li>
+                </ul>
+                <br>
+                Hos Fixbil finner du alt du skulle trenge til vedlikehold og sjekking av bilen din. Vi er veldig stolt av ha de som partner.
+            </p>
+    </section>
+
+    <section class="bolig">
+
+        
+    </section>
+
+
+
+
+
+  <section class="section">
+    <h2>Om oss</h2>
+    <div class="team">
+      <div class="person">Christian</div>
+      <div class="person">Pål Ari</div>
+      <div class="person">Lars</div>
+      <div class="person">Ronja</div>
+      <div class="person">Vilde</div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Regnbyen AS - All rights reserved
+  </footer>
+</body>
+</html>
