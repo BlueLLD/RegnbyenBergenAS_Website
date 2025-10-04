@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	font-family: Arial, sans-serif;
 	line-height: 1.5;
+	height: 100dvh;
 }
 
 header {
@@ -16,6 +17,8 @@ header {
 header .logo {
 	font-size: 1.5rem;
 	font-weight: bold;
+	height: 50px;
+	filter: brightness(0);
 }
 
 header .tagline {
@@ -76,6 +79,23 @@ nav a {
 	padding: 1rem;
 	text-align: center;
 }
+.vannvett h2 {
+	font-variant: small-caps;
+	border-bottom: 1px solid black;
+	color:#0055a5;
+	text-align: center;
+}
+
+.vannvett h4 {
+	text-transform: uppercase;
+	font-size: 1em;
+	margin-bottom: 3px;
+
+}
+
+.vannvett li {
+	margin-bottom: 5px;
+}
 
 footer {
 	background: #003366;
@@ -83,4 +103,7 @@ footer {
 	text-align: center;
 	padding: 1rem;
 	font-size: 0.9rem;
+	height: 1em;
+	align-content: center;
+	vertical-align:auto;
 }
