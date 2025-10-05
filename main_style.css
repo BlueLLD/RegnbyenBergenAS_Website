@@ -38,6 +38,8 @@ nav ul {
 	display: flex;
 	list-style: none;
 	gap: 1rem;
+	text-shadow: black;
+	box-shadow: 2px 2px black;
 }
 
 nav a {
