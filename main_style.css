@@ -17,12 +17,12 @@ header {
 header .logo {
 	font-size: 1.5rem;
 	font-weight: bold;
-	height: 50px;
-	filter: brightness(0);
+	height: 50px; 
+	filter:brightness(100) grayscale(100%)
 }
 
 header .tagline {
-	color: black;
+	color: rgb(255, 255, 255);
 	font-size: 1rem;
 	opacity: 0.8;
 }
