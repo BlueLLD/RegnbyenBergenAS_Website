@@ -32,7 +32,7 @@ function highlight(state){
 function loadLanguage(ln){
     localStorage.setItem("language",ln)
     forAllTranslatables((el,_,text)=>{
-        el.innerText = text
+        el.innerHTML = text
         highlight_translated_elements && (el.style.color = "red")
     },ln)
 }
@@ -46,3 +46,4 @@ function activateButtons(){
 }
 activateButtons()
 highlight(highlight_translated_elements)
+loadLanguage(current_language)
