@@ -238,8 +238,6 @@ footer {
     padding: 2rem;
     border: 1px solid var(--border);
 }
-.vannvett ol {
-}
 .vannvett li {
     list-style-type: numeric;
     margin-bottom: 2rem;
