@@ -3,124 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Produkter</title>
     <style>
-        table {
-            width: 60%;
-            right: -20%;
-            border-collapse: collapse;
-            border: 2px solid rgb(140 140 140);
-            font-family: sans-serif;
-            font-size: 0.8rem;
-            letter-spacing: 1px;
-            position: relative;
-        }
 
-        caption {
-            caption-side: bottom;
-            padding: 30px;
-            font-weight: bold;
-        }
+      .motegalleri {
+        display : grid; 
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px; 
+      }
 
-        thead,
-        tfoot {
-            background-color: rgb(228 240 245); 
-        }
+      .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        height: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
 
-        th,
-        td {
-            border: 1px solid rgb(160 160 160);
-            padding: 8px 10px;
-        }
+      .item img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
+        border-radius: 10px;
+      }
 
-        td {
-            text-align: center;
-        }
+      .item a {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    
+      }
 
-        tbody > tr:nth-of-type(even) {
-            background-color: rgb(237 238 242);
-        }
+      h1, h2, p {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 15px;
+      }
 
-        tfoot th {
-            text-align: right;
-        }
-
-        tfoot td {
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
-<table>
-  <caption>
-    Midlertidlige Klesprodukter
-  </caption>
-
-  <thead>
-    <tr>
-      <th scope="col">Årstid</th>
-      <th scope="col">Sko</th>
-      <th scope="col">Bein</th>
-      <th scope="col">Overkropp</th>
-      <th scope="col">Hodeplagg</th>
-    </tr>
-  </thead>
-
-  <!-- Produkter -->
-  <tbody>
-    <tr>
-      <td>Vinter</td>
-      <th scope="row">Støvletter</th>
-      <td>Stilongs</td>
-      <td>Ullgenser</td>
-      <td>Øreklokker</td>
-    </tr>
-    <tr>
-      <td>-</td>
-      <th scope="row">Vintersko</th>
-      <td>Ullundertøy</td>
-      <td>Parkas</td>
-      <td>Lue</td>
-    </tr>
-    <tr>
-      <td>-</td>
-      <th scope="row">-</th>
-      <td>Vintersko</td>
-      <td>Snøbukse</td>
-      <td>Skjerf</td>
-    </tr>
-
-    <tr>
-      <td>Sommer</td>
-      <th scope="row">Fjellsko</th>
-      <td>Shorts</td>
-      <td>T-skjorte</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Høst</td>
-      <th scope="row">Joggesko</th>
-      <td>Strømper</td>
-      <td>Regnjakke</td>
-      <td>Bøttehatt</td>
-    </tr>
-
-    <tr>
-      <td>Vår</td>
-      <th scope="row">Chelsea boots</th>
-      <td>Jeans</td>
-      <td>Genser</td>
-      <td>Headset :)</td>
-    </tr>
-  </tbody>
-</table>
 
 <h1>Produkter</h1>
 
 <p>Introtekst til siden .. pisgjspigrjprjwhp@jrwhpjrsoh</p>
 
+<!-- Vår motegalleri -->
+
+<h2>Vårmote</h2>
+<p>Introtekst til siden .. pisgjspigrjprjwhp@jrwhpjrsoh</p>
+<section class="motegalleri">
+
+  <div class="item">
+    <img src="images/motegalleri/chelseaboots_dame Background Removed.png" alt="Chelseaboots til dame">
+    <a href="https://norvo.no/products/norvo-regn-beskyttelse-jakker-vannavsttende-med-anti-glid-manchett-perfekt-for-regnfullt-vr?variant=55661912392053">Kjøp her</a>
+  </div>
+
+  <div class="item">
+    <img src="images/motegalleri/chelseaboots_mann Background Removed.png" alt="Chelseaboots til mann">
+    <a href="https://www.zalando.no/sorel-madson-ii-snoerestoevletter-tantobacco-so612k00x-n11.html">Kjøp her</a>
+  </div>
+
+  <div class="item">
+    <img src="images/motegalleri/jeans_dame Background Removed.png" alt="Jeans til dame">
+    <a href="https://www.zalando.no/sorel-madson-ii-snoerestoevletter-tantobacco-so612k00x-n11.html">Kjøp her</a>
+  </div>
+
+  <div class="item">
+    <img src="images/motegalleri/jeans_mann Background Removed.png" alt="Jeans til mann">
+    <a href="https://www.zalando.no/redefined-rebel-kyoto-jeans-relaxed-fit-mid-blue-r0622g07a-k11.html">Kjøp her</a>
+  </div>
+
+  <div class="item">
+    <img src="images/motegalleri/genser_dame Background Removed.png" alt="Genser til dame">
+    <a href="https://www.zalando.no/karl-kani-signature-sweatshirt-black-kk121j06b-q11.html">Kjøp her</a>
+  </div>
+
+  <div class="item">
+    <img src="images/motegalleri/genser_mann Background Removed.png" alt="Genser til mann">
+    <a href="https://www.zalando.no/guess-jeans-half-zip-sweatshirt-daring-ocean-g8522s00c-k11.html">Kjøp her</a>
+  </div>
+
+  <div class="item">
+    <img src="images/motegalleri/headsett_dame Background Removed.png" alt="Headsett til dame">
+    <a href="https://www.miinto.no/p-crystal-angel-headset-hodetelefoner-1b5b4199-26be-49ef-a4f0-8f8978719d34?utm_source=google&utm_medium=cpc&utm_campaign=P-NO|Shopping&gad_source=1&gad_campaignid=10687383821&gbraid=0AAAAADIxZeGuaXB63czxUwqkYG8Q4merJ&gclid=Cj0KCQjwrc7GBhCfARIsAHGcW5VMy1FxUBjfoK_1lKY-SmLtpR5e4n59vIBd2Cfa4FejkS7yfzV7J0MaAlNWEALw_wcB">Kjøp her</a>
+  </div>
+
+  <div class="item">
+    <img src="images/motegalleri/headset_mann Background Removed.png" alt="Headsett til mann">
+    <a href="https://www.dyson.no/hodetelefoner/ontrac/cnc-copper?utm_source=SHOPIA+%5BINVOKE+AB%5D&utm_medium=affiliate&utm_campaign=&utm_term=Comparison+Shopping+Service+%28CSS%29+SHOPIA&sv1=affiliate&sv_campaign_id=369493&awc=25181_1758724510_9595fe9f364356c9ce5f3a461a3e2bbd">Kjøp her</a>
+  </div>
+
+</section>
+
   <!-- Høst motegalleri -->
-<section>
+  <h2>Høstmote</h2>
+  <p>Introtekst til siden .. pisgjspigrjprjwhp@jrwhpjrsoh</p>
+<section class="motegalleri">
+
   <div class="item">
     <img src="images/motegalleri/bottehatt_dame Background Removed.png" alt="Bøttehatt til dame">
     <a href="https://www.zalando.no/tommy-jeans-tjw-heritage-bucket-hat-hatt-lilac-tob51b05z-i11.html">Kjøp her</a>
@@ -128,7 +110,37 @@
 
   <div class="item">
     <img src="images/motegalleri/bottehatt_mann Background Removed.png" alt="Bøttehatt til mann">
-    <a href="https://www.zalando.no/tommy-jeans-tjw-heritage-bucket-hat-hatt-lilac-tob51b05z-i11.html">Kjøp her</a>
+    <a href="https://hatstore.no/buckets/new-york-yankees-mlb-natural-bucket-47-brand">Kjøp her</a>
+  </div>
+
+  <div class="item">
+    <img src="images/motegalleri/sokker-dame Background Removed.png" alt="Sokker til dame">
+    <a href="https://www.zalando.no/happy-socks-structure-slinky-14-crew-socks-unisex-2-pack-sokker-pink-ha38100y2-j11.html">Kjøp her</a>
+  </div>
+
+  <div class="item">
+    <img src="images/motegalleri/sokker_menn Background Removed.png" alt="Sokker til menn">
+    <a href="https://hoyer.no/herre/polo-bear-cotton-blend-crew-socks-white/?productId=10816927">Kjøp her</a>
+  </div>
+
+  <div class="item">
+    <img src="images/motegalleri/regnjakke_dame Background Removed.png" alt="Regnjakke til dame">
+    <a href="https://brgn.com/collections/regnjakke-kape/products/rossby-coat-coats-taupe">Kjøp her</a>
+  </div>
+  
+  <div class="item">
+    <img src="images/motegalleri/regnjakke_menn Background Removed.png" alt="Regnjakke til mann">
+    <a href="https://brgn.com/collections/regnjakke-frakk/products/sluddn-coat-taupe">Kjøp her</a>
+  </div>
+
+  <div class="item">
+    <img src="images/motegalleri/joggesko_dame Background Removed.png" alt="Joggesko til dame">
+    <a href="https://www.zalando.no/salomon-x-ultra-5-fjellsko-aloeshortbreadmahogany-rose-sa541a0h8-n11.html">Kjøp her</a>
+  </div>
+
+  <div class="item">
+    <img src="images/motegalleri/joggesko_menn Background Removed.png" alt="Joggesko til menn">
+    <a href="https://www.zalando.no/nike-performance-air-max-alpha-6-treningssko-sailbaroque-brownhempdesert-dustwhiteplatinum-coloured-n1242a2re-a16.html">Kjøp her</a>
   </div>
 
 </section>
