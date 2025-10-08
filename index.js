@@ -1,10 +1,18 @@
 /**@type {Object<string,string>} */
 const languages = data
 
+function parseBooleanToString(x){
+    if (typeof x == "boolean")
+        return String(Number(x))
+}
+function parseStringToBoolean(x){
+    if (typeof x == "string")
+        return Boolean(Number(x))
+}
 
 let current_language = localStorage.getItem("language") || "no"
 
-var highlight_translated_elements = localStorage.getItem("highlight") || false
+var highlight_translated_elements = parseStringToBoolean(localStorage.getItem("highlight")) || false
 
 /**
  * @param {(element:HTMLElement,key:String,text:String)=>void} callback 
@@ -20,7 +28,7 @@ function forAllTranslatables(callback,ln){
 
 function toggleHighlight(){   
     highlight_translated_elements = !highlight_translated_elements  
-    localStorage.setItem("highlight",highlight_translated_elements) 
+    localStorage.setItem("highlight",parseBooleanToString(highlight_translated_elements)) 
     highlight(highlight_translated_elements)
 }
 
@@ -32,7 +40,7 @@ function highlight(state){
 function loadLanguage(ln){
     localStorage.setItem("language",ln)
     forAllTranslatables((el,_,text)=>{
-        el.innerText = text
+        el.innerHTML = text
         highlight_translated_elements && (el.style.color = "red")
     },ln)
 }
@@ -46,3 +54,4 @@ function activateButtons(){
 }
 activateButtons()
 highlight(highlight_translated_elements)
+loadLanguage(current_language)
