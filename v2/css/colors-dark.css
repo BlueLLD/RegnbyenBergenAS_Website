@@ -3,10 +3,11 @@
     --bg: hsl(224 77% 6%);
     --bg-light: hsl(220 53% 10%);
     --text: hsl(219 100% 100%);
+    --text-invert: hsl(219 100% 0%);
     --text-muted: hsl(219 60% 74%);
     --highlight: hsl(220 32% 43%);
     --border: hsl(220 41% 32%);
-    --border-muted: hsl(220 57% 21%);
+    --border-muted: hsla(220 57% 21% 100%);
     --primary: hsl(219 78% 75%);
     --secondary: hsl(40 54% 60%);
     --danger: hsl(9 42% 65%);
@@ -14,4 +15,8 @@
     --success: hsl(148 27% 56%);
     --info: hsl(217 46% 66%);
     --shadow: hsl(0 0 0);
+    --shadow-invert: hsl(0 0 100);
+    --gradient-start: hsl(220 41% 32%);
+    --gradient-end: hsl(232 96% 3%);
+    --blank: hsla(0 0 0 0);
 }

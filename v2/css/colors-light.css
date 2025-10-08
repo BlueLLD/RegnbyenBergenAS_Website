@@ -3,6 +3,7 @@
     --bg: hsl(219 100% 98%);
     --bg-light: hsl(219 100% 100%);
     --text: hsl(232 100% 9%);
+    --text-invert:hsl(232 100% 100%);
     --text-muted: hsl(220 41% 32%);
     --highlight: hsl(219 100% 100%);
     --border: hsl(219 32% 55%);
@@ -13,5 +14,9 @@
     --warning: hsl(51 46% 30%);
     --success: hsl(150 37% 33%);
     --info: hsl(217 34% 43%);
-    --shadow: hsl(0 0 100);
+    --shadow: hsl(0 0 10);
+    --shadow-light: hsl(0 0 90);
+    --gradient-start: hsl(219 45% 90%);
+    --gradient-end: hsl(219 100% 80%);
+    --blank: hsla(0 0 0 0);
 }
