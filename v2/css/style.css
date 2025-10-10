@@ -1,3 +1,4 @@
+
 html {
     background-color: var(--bg-dark);
 }
@@ -53,6 +54,8 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    max-width: 1080px;
+    margin: auto;
 }
 
 nav li {
@@ -61,6 +64,7 @@ nav li {
     border: 1px solid;
     border-color: var(--border);
     border-radius: 4px;
+    align-content: center;
 }
 
 nav li a {
@@ -74,11 +78,16 @@ nav ul li:hover {
     color: white;
     background: linear-gradient(145deg, var(--gradient-start), var(--gradient-end));
     text-shadow: 1px 1px 3px var(--shadow);
-    transition: background-color 0.4s
 }
 
 nav ul li:hover a {
     color: white;
+}
+
+nav ul .active {
+    background: linear-gradient(145deg, var(--gradient-start), var(--gradient-end));
+    text-shadow: 1px 1px 3px var(--shadow);
+    color: white
 }
 
 
@@ -96,31 +105,6 @@ nav ul li:hover a {
     border: 1px solid var(--border);
     border-radius: 4px;
     margin: 1rem;
-}
-
-@media (max-width: 768px) {
-    nav {
-        padding:0;
-    }
-    nav ul {
-        display: none;
-        flex-direction: column;
-        gap: 0.5rem;
-        margin-top: 1rem;
-    }
-
-    #menu-toggle:checked + .menu-icon + nav ul {
-        display: flex;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
-    nav li {
-        text-align: center;
-        width: 100%;
-    }
 }
 
 main {
@@ -243,6 +227,10 @@ footer {
     margin-bottom: 2rem;
 }
 
+.vannvett li:last-child {
+    margin-bottom: 0;
+}
+
 .vannvett h4 {
     margin-bottom: 1rem;
     font-size: 1.2rem;
@@ -251,6 +239,7 @@ footer {
     border-bottom: 1px solid var(--border);
 }
 
+<<<<<<< HEAD
 
 .car_info td img{
     width: 600px;
@@ -292,3 +281,147 @@ table .car_info :nth-child(3){
     width: 100px;
 }
 
+=======
+.motegalleri {
+    display : grid; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    object-fit: contain;
+    background: linear-gradient(var(--border), var(--bg-light));
+    border: 1px solid var(--border);
+    padding: 10px;
+}
+
+.item a {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: var(--text);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--bg-dark);
+}
+
+.item a:hover {
+    background: linear-gradient(145deg, var(--gradient-start), var(--gradient-end));
+    color: var(--text-light);
+    text-shadow: 1px 1px 3px var(--shadow);
+}
+
+h1, h2, p {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding:0;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    #menu-toggle:checked + .menu-icon + nav ul {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav li {
+        text-align: center;
+        width: 100%;
+    }
+    .motegalleri {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    .item img {
+        min-width: 165px;
+    }
+}
+
+.tabs {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    /* Hide radio buttons */
+    input[type="radio"] {
+        display: none;
+    }
+
+    /* Style tab labels */
+    .tab-labels {
+        display: flex;
+    }
+
+    .tab-labels label {
+        flex: 1;
+        padding: 10px;
+        background: var(--bg-dark);
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid var(--border);
+        transition: background 0.3s;
+    }
+
+    .tab-labels label:hover {
+        background: linear-gradient(to top, var(--gradient-start), var(--gradient-end));
+    }
+
+    /* Content area */
+    .tab-content {
+        border: 1px solid var(--border);
+        border-top: none;
+        padding: 20px;
+        background: var(--bg);
+    }
+
+    .content {
+        display: none;
+    }
+
+    /* Show the selected tab */
+    #tab1:checked ~ .tab-contents #content1,
+    #tab2:checked ~ .tab-contents #content2,
+    #tab3:checked ~ .tab-contents #content3,
+    #tab4:checked ~ .tab-contents #content4 {
+        display: block;
+    }
+
+    /* Highlight active tab */
+    #tab1:checked ~ .tab-labels label[for="tab1"],
+    #tab2:checked ~ .tab-labels label[for="tab2"],
+    #tab3:checked ~ .tab-labels label[for="tab3"],
+    #tab4:checked ~ .tab-labels label[for="tab4"] {
+        background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
+        border-bottom: none;
+        font-weight: bold;
+    }
+>>>>>>> dd3306e4922000e81b01f3b3bb7647341159de50
