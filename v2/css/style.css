@@ -239,49 +239,6 @@ footer {
     border-bottom: 1px solid var(--border);
 }
 
-<<<<<<< HEAD
-
-.car_info td img{
-    width: 600px;
-}
-
-table {
-    line-height: 1.5;
-    border: 1px solid grey;
-    border-collapse: collapse;
-    margin: 0 auto;
-    border-radius: 5px;
-}   
-table th, td {
-    line-height: 1.5;
-    border: 2px solid gray ;
-}   
-
-table thead{
-    text-align: left;
-    /* padding-right: 30px; */
-}
-
-
-table .car_info :nth-child(1),
-table .car_info :nth-child(2),
-table .car_info :nth-child(3){
-    font-size: large;
-    padding-bottom: 10px;
-    vertical-align: top;
-    
-}
-
-table .car_info :nth-child(4),
-table .car_info :nth-child(5){
-    vertical-align: top;
-}
-
-table .car_info :nth-child(3){
-    width: 100px;
-}
-
-=======
 .motegalleri {
     display : grid; 
     grid-template-columns: repeat(4, 1fr);
@@ -424,4 +381,43 @@ h1, h2, p {
         border-bottom: none;
         font-weight: bold;
     }
->>>>>>> dd3306e4922000e81b01f3b3bb7647341159de50
+
+    .car_info td img{
+    width: 600px;
+}
+
+table {
+    line-height: 1.5;
+    border: 1px solid grey;
+    border-collapse: collapse;
+    margin: 0 auto;
+    border-radius: 5px;
+}   
+table th, td {
+    line-height: 1.5;
+    border: 2px solid gray ;
+}   
+
+table thead{
+    text-align: left;
+    /* padding-right: 30px; */
+}
+
+
+table .car_info :nth-child(1),
+table .car_info :nth-child(2),
+table .car_info :nth-child(3){
+    font-size: large;
+    padding-bottom: 10px;
+    vertical-align: top;
+    
+}
+
+table .car_info :nth-child(4),
+table .car_info :nth-child(5){
+    vertical-align: top;
+}
+
+table .car_info :nth-child(3){
+    width: 100px;
+}
