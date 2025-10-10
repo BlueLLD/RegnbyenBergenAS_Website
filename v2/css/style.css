@@ -5,10 +5,11 @@ html {
 
 body {
     font-family: 'UbuntuSansNerdFont', sans-serif;
-    font-weight: 400;
+    font-weight: normal;
     background-color: var(--bg-dark);
     color: var(--text);
-    letter-spacing: 0.05em;
+    letter-spacing: 0.12em;
+    line-height: 1.5em;
 }
 
 /* landing styles */
@@ -103,7 +104,6 @@ header .tagline {
                     1px -1px 3px black,
                     -1px 1px 3px black,
                     -1px -1px 3px black;
-
 }
 
 nav {
@@ -341,7 +341,7 @@ footer {
     padding: 10px;
 }
 
-.item a, .verksted a {
+.item a, .verksted a, .partner a {
     display: block;
     text-align: center;
     margin-top: 5px;
@@ -358,7 +358,7 @@ footer {
     margin-right: auto;
 }
 
-.item a:hover, .verksted a:hover {
+.item a:hover, .verksted a:hover, .partner a:hover {
     background: linear-gradient(145deg, var(--gradient-start), var(--gradient-end));
     color: var(--text-light);
     text-shadow: 1px 1px 3px var(--shadow);
@@ -412,66 +412,73 @@ h2 {
 }
 
 .tabs {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
 
-    /* Hide radio buttons */
-    input[type="radio"] {
-        display: none;
-    }
+input[type="radio"] {
+    display: none;
+}
 
-    /* Style tab labels */
-    .tab-labels {
-        display: flex;
-    }
+.tab-labels {
+    display: flex;
+}
 
-    .tab-labels label {
-        flex: 1;
-        padding: 10px;
-        background: var(--bg-dark);
-        text-align: center;
-        cursor: pointer;
-        border: 1px solid var(--border);
-        transition: background 0.3s;
-    }
+.tab-labels label {
+    flex: 1;
+    padding: 10px;
+    background: var(--bg-dark);
+    text-align: center;
+    font-size: larger;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    transition: background 0.3s;
+}
 
-    .tab-labels label:hover {
-        background: linear-gradient(to top, var(--gradient-start), var(--gradient-end));
-    }
+.tab-labels label:hover {
+    background: linear-gradient(to top, var(--gradient-start), var(--gradient-end));
+    text-shadow:    1px 1px 3px black,
+                    1px -1px 3px black,
+                    -1px 1px 3px black,
+                    -1px -1px 3px black;
+}
 
-    /* Content area */
-    .tab-content {
-        border: 1px solid var(--border);
-        border-top: none;
-        padding: 20px;
-        background: var(--bg);
-    }
+/* Content area */
+.tab-content {
+    border: 1px solid var(--border);
+    border-top: none;
+    padding: 20px;
+    background: var(--bg);
+}
 
-    .content-hidden {
-        display: none;
-    }
+.content-hidden {
+    display: none;
+}
 
-    /* Show the selected tab */
-    #tab1:checked ~ .tab-contents #content1,
-    #tab2:checked ~ .tab-contents #content2,
-    #tab3:checked ~ .tab-contents #content3,
-    #tab4:checked ~ .tab-contents #content4 {
-        display: block;
-    }
+/* Show the selected tab */
+#tab1:checked ~ .tab-contents #content1,
+#tab2:checked ~ .tab-contents #content2,
+#tab3:checked ~ .tab-contents #content3,
+#tab4:checked ~ .tab-contents #content4 {
+    display: block;
+}
 
-    /* Highlight active tab */
-    #tab1:checked ~ .tab-labels label[for="tab1"],
-    #tab2:checked ~ .tab-labels label[for="tab2"],
-    #tab3:checked ~ .tab-labels label[for="tab3"],
-    #tab4:checked ~ .tab-labels label[for="tab4"] {
-        background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
-        border-bottom: none;
-        font-weight: bold;
-    }
+/* Highlight active tab */
+#tab1:checked ~ .tab-labels label[for="tab1"],
+#tab2:checked ~ .tab-labels label[for="tab2"],
+#tab3:checked ~ .tab-labels label[for="tab3"],
+#tab4:checked ~ .tab-labels label[for="tab4"] {
+    background: linear-gradient(to bottom, var(--gradient-start), var(--bg));
+    border-bottom: none;
+    font-weight: bold;
+    text-shadow:    1px 1px 3px black,
+                    1px -1px 3px black,
+                    -1px 1px 3px black,
+                    -1px -1px 3px black;
+}
 
-    .car_info td img{
+.car_info td img{
     width: 600px;
 }
 
@@ -511,12 +518,21 @@ table .car_info :nth-child(3){
     width: 100px;
 }
 
-.bolig details {
+.bolig details, .partner details {
     cursor: pointer;
     padding: 1em;
     border-top: 1px solid var(--border);
 }
 
+.partner details {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.partner details p {
+    font-size:medium;
+    font-weight: normal;
+}
 
 .bolig h3 {
     border: none;
@@ -533,4 +549,16 @@ table .car_info :nth-child(3){
 
 .verksted ul li:hover {
     list-style-type: disc;
+}
+
+.partner details p a {
+    margin-top: 25px;
+    font-size: large;
+}
+.partner details p {
+    line-height: 1.6em;
+}
+
+main p {
+    font-weight: normal;
 }
