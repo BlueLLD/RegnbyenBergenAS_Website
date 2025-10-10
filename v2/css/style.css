@@ -75,6 +75,8 @@ nav li a {
 }
 
 #student_list{
+    --border-radius:15px;
+    
     display: flex;
     align-content: center;
     gap: 20px;
@@ -83,16 +85,66 @@ nav li a {
 }
 
 #student_list div{
+    text-align: center;
+    display: flex;
+    border-radius: var(--border-radius);
+    background-color: var(--bg-light);
+    border: 1px solid var(--border);
+    height: 160px;
+}
+
+#student_list a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+#student_list div:hover {
+    background-color: none;
+    background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
+}
+
+#student_list div div:hover {
+    background-color: none;
+    background: none;
+}
+
+#student_list div div {
+    border: none;
+    border-radius: 0;
+    background: none;
+}
+
+.info_container{
+    flex-direction: column;
+    text-align: center;
+    word-wrap: break-word;
+    width: 200px;
+}
+
+.info_container b {
+    width: fit-content;
+    padding: 10px 20px 0 20px;
+    font-size: large;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--border);
+}
+.info_container p{
     text-align: left;
+    font-weight: normal;
+}
+
+.info_container p:hover {
+    text-shadow: 1px 1px 3px var(--shadow);
 }
 
 #student_list div img{
     display: block;
     object-fit: cover;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100%;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
 }
 
 
@@ -191,6 +243,7 @@ footer {
     justify-content: center;
     align-items: center;
     position: relative;
+    z-index: 1;
     min-height: 100vh;
 }
 .overlay {
@@ -203,6 +256,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 2;
     gap: 2rem;
 }
 .landing-slagord {
@@ -463,8 +517,7 @@ table .car_info :nth-child(3){
     border-top: 1px solid var(--border);
 }
 
-.bolig summary {
-}
+
 .bolig h3 {
     border: none;
 }
