@@ -562,3 +562,9 @@ table .car_info :nth-child(3){
 main p {
     font-weight: normal;
 }
+
+#language_box{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}

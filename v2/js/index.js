@@ -20,7 +20,7 @@ var highlight_translated_elements = parseStringToBoolean(localStorage.getItem("h
  */
 function forAllTranslatables(callback,ln){
     for(const [key,text] of Object.entries(languages[ln || current_language])){
-        document.querySelectorAll(`[translation_key=${key}]`).forEach(element=>{
+        document.querySelectorAll(`[data-translation-key=${key}]`).forEach(element=>{
             callback(element,key,text)
         })
     }
@@ -40,6 +40,15 @@ function highlight(state){
 function loadLanguage(ln){
     localStorage.setItem("language",ln)
     forAllTranslatables((el,_,text)=>{
+        
+        const sub_query = el.getAttribute("data-on-sub-elements")
+        if(sub_query){
+            el.querySelectorAll(sub_query).forEach(el=>{
+                el.innerHTML = text
+                highlight_translated_elements && (el.style.color = "red")
+            })
+            return
+        }
         el.innerHTML = text
         highlight_translated_elements && (el.style.color = "red")
     },ln)
