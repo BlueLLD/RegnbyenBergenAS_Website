@@ -107,8 +107,36 @@ data = {
         prevent_damage_answer:"Install good ventilation, use moisture-proof materials, and consider a partner who can provide solutions to stop moisture from entering.",
         what_paint:"What paint should I use?",
         what_paint_answer:`Choose a paint developed for coastal climates and heavy rainfall. We recommend <a href="#">ByggPartner AS</a>'s solutions, which have been tested for extreme weather.`,
-        for_more_info:`For more information, contact our partner <a href="https://byggpartner.no/">ByggPartner AS</a> for advice and products that suit your home in Bergen.`
+        for_more_info:`For more information, contact our partner <a href="https://byggpartner.no/">ByggPartner AS</a> for advice and products that suit your home in Bergen.`,
     
+        // spons.html
+        our_partners:"Our partners",
+        our_partners_overview:"Here is an overview of all our partners.<br> For those of you who are members, you get up to <b>10% discount</b> on their services and products.",
+
+        tesla_partner:`Electric cars with very modern technology and high quality.<br> Focus on comfort, sustainability and safety. <br>
+                       Fast chargers are widely available in Norway for those who love to go on road trips. <br>
+                       <a href="https://www.tesla.com/no_no">Click here for more about Tesla</a>`,
+
+        volvo_partner:`Cars at reasonable prices. Known for safety. Wide range of models. <br>
+                       Whether you are looking for SUVs or smaller city cars, Volvo has something for you.<br>
+                       <a href="https://www.volvocars.com/no/">Click here for more about Volvo</a>`,
+        hyundai_partner:`A lot of car for the money. Good warranty. <br>The design is modern and appealing.<br>
+                         The electric cars have some of the best ranges in their class.<br>
+                         <a href="https://www.hyundai.com/no/no.html">Click here for more about Hyundai</a>`,
+        fixbil_partner:`Whether it's service, EU inspection or repair of your car, Fixbil is a good choice.<br>
+                        With several workshops around Bergen, it's easy to find one that suits you.<br>
+                        <a href="https://fixbil.no/">Click here for more about Fixbil</a>`,
+        bergem_kommune_partner:`Love throwing money at fictitious projects. <br> Of course they would sponsor our fantastic information site.
+                                <a href="https://www.bergen.kommune.no/">Click here for more about Bergen Municipality</a>`,
+        BRGN_partner:`Fashion for both women and men.<br> Waterproof clothing, perfect for Bergen and western Norway. <br>
+                      Great design and good quality.<br>
+                      <a href="https://brgn.com/?srsltid=AfmBOorIKDScmoPWbzoNw_x6MOSeE3th5p2AhCWdSDFKb1yPkfB00KEW">Click here for more about BRGN</a>`,
+        visit_bergen_partner:`The official tourist information for Bergen and the surrounding region.<br>
+                              Here you will find tips for activities, accommodation and places to eat in and around Bergen.<br>
+                              <a href="https://www.visitbergen.com/">Click here for more about Visit Bergen</a>`,
+        byggpartner_partner:`Renovation, renovation and home styling.<br> Great for those who need help with housing. <br>Project gallery on their website.<br>
+                             <a href="https://bpvest.no/">Click here for more about Byggpartner</a>`,
+
     },
     "no":{
         language:"Språk",
@@ -213,6 +241,33 @@ data = {
         what_paint:"Hvilken maling bør jeg bruke?",
         what_paint_answer:`Velg en maling utviklet for kystklima og mye nedbør. Vi anbefaler <a href="#">ByggPartner AS</a> sine løsninger som er testet for ekstremvær.`,
         for_more_info:`For mer informasjon, kontakt vår samarbeidspartner <a href="https://byggpartner.no/">ByggPartner AS</a> for råd og produkter som passer ditt hjem i Bergen.`,
+
+        // spons.html
+        our_partners:"Våre partnere",
+        our_partners_overview:"Her en er oversikt over alle våre partnere.<br> For deg som er medlem så får du opp til <b>10% rabatt</b> på deres tjenester of produkter",
+
+        tesla_partner:`Elbiler med meget moderne teknologi og høy kvalitet.<br> Fokus på komfort, bærekraft og sikkerhet. <br>
+                            Hurtigladere er over store deler i Norge for de som er glad i å dra på biltur. <br>
+                            <a href="https://www.tesla.com/no_no">Klikk her for mer om Tesla</a>`,
+        volvo_partner:`Biler til rimilige priser. Kjent for sikkerhet. Bredt utvalg av modeller. <br>
+                            Om du er ute etter SUV eller mindre bybiler, har Volvo noe for deg.<br>
+                            <a href="https://www.volvocars.com/no/">Klikk her for mer om Volvo</a>`,
+        hyundai_partner:`Mye bil for pengene. God garantiordning. <br>Designet er moderne og tiltalende.<br>
+                            Elbilene har noen av de beste rekkeeviddene i sin klasse.<br>
+                            <a href="https://www.hyundai.com/no/no.html">Klikk her for mer om Hyundai</a>`,
+        fixbil_partner:`Om det er snakk om service, EU-kontroll eller reparasjon av bilen din, så er Fixbil et godt valg.<br>
+                            Med flere verksteder rundt om i Bergen, er det lett å finne et som passer for deg.<br>
+                            <a href="https://fixbil.no/">Klikk her for mer om Fixbil</a>`,
+        bergem_kommune_partner:` Elsker å kaste penger på fiktive prosjekter. <br> Selvfølgelig ville de sponse våres fantastiske informasjonsside.
+                            <a href="https://www.bergen.kommune.no/">Klikk her for mer om Bergen Kommune</a>`,
+        BRGN_partner:`Mote til både dame og herre.<br> Vanntette klær, perfekt for Bergen og vestlandet. <br>
+                            Flott design og god kvalitet.<br>
+                            <a href="https://brgn.com/?srsltid=AfmBOorIKDScmoPWbzoNw_x6MOSeE3th5p2AhCWdSDFKb1yPkfB00KEW">Klikk her for mer om BRGN</a>`,
+        visit_bergen_partner:` Den offisielle turistinformasjonen for Bergen og regionen rundt.<br>
+                            Her får du tips til aktiviteter, overnatting og spisesteder i og rundt Bergen.<br>
+                            <a href="https://www.visitbergen.com/">Klikk her for mer om Visit Bergen</a>`,
+        byggpartner_partner:`Opppussing, renovering og boligstyling.<br> Fint for deg som trenger hjelp til bolig. <br>Prosjektgalleri inne på hjemmesiden deres.<br>
+                            <a href="https://bpvest.no/">Klikk her for mer om Byggpartner</a>`,
 
     }
 }
