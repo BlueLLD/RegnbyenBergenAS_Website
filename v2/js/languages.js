@@ -154,7 +154,7 @@ data = {
         car_and_housing:"Bolig og Bil",
         water_saftey:"Vanvett",
 
-        slogan:"tørre tips i en våt by",
+        slogan:"Tørre tips i en våt by",
         
         // klaer.html
         spring_fasion:"Vårmote",
