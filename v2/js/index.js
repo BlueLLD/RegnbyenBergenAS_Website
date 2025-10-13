@@ -1,15 +1,6 @@
 /**@type {Object<string,string>} */
 const languages = data
 
-function parseBooleanToString(x){
-    if (typeof x == "boolean")
-        return String(Number(x))
-}
-function parseStringToBoolean(x){
-    if (typeof x == "string")
-        return Boolean(Number(x))
-}
-
 let current_language = localStorage.getItem("language") || "no"
 
 var highlight_translated_elements = parseStringToBoolean(localStorage.getItem("highlight")) || false
