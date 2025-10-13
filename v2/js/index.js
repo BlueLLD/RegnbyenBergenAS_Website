@@ -10,9 +10,16 @@ function parseStringToBoolean(x){
         return Boolean(Number(x))
 }
 
+
 let current_language = localStorage.getItem("language") || "no"
 
 var highlight_translated_elements = parseStringToBoolean(localStorage.getItem("highlight")) || false
+
+let use_dark_mode;
+{
+    const saved_use_dark_mode = parseStringToBoolean(localStorage.getItem("use_dark_mode"))
+    use_dark_mode = typeof saved_use_dark_mode == "boolean" ? saved_use_dark_mode : true
+}
 
 /**
  * @param {(element:HTMLElement,key:String,text:String)=>void} callback 
@@ -75,7 +82,25 @@ function activateButtons(){
         norway_button.onclick = () => loadLanguage("no")
     }
 }
-activateButtons()
-highlight(highlight_translated_elements)
-loadLanguage(current_language)
-findMissingKeys()
+
+function setUseDarkMode(v){
+    use_dark_mode = v
+
+    light_style_sheet.disabled = use_dark_mode
+    dark_style_sheet.disabled = !use_dark_mode
+    localStorage.setItem("use_dark_mode",parseBooleanToString(v))
+}
+
+const style_sheets = [...document.styleSheets]
+const dark_style_sheet = style_sheets.find(v=>v.href.includes("dark.css"))
+const light_style_sheet = style_sheets.find(v=>v.href.includes("light.css"))
+
+
+
+document.addEventListener("DOMContentLoaded",()=>{
+    activateButtons()
+    highlight(highlight_translated_elements)
+    loadLanguage(current_language)
+    findMissingKeys()
+    setUseDarkMode(use_dark_mode)
+})
