@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>. Om meg</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f7;
+            color: #333;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Hovedlayout */
+        .main {
+            background-color: #fff;
+            padding: 50px 70px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            max-width: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Overskriftsrad (to kolonner, midtjustert tekst) */
+        .top-row {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-bottom: 25px;
+        }
+
+        .top-section {
+            width: 450px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50px; /* sørger for samme høyde på overskriftene */
+        }
+
+        .top-section h1, .top-section h2 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        .top-section h1 {
+            color: #2b6cb0;
+        }
+
+        .top-section h2 {
+            color: #2c5282;
+        }
+
+        /* Innholdsraden (bilde og tabell) */
+        .content-row {
+            display: flex;
+            justify-content: center;
+            align-items: stretch; /* like høyde */
+            gap: 60px;
+            width: 100%;
+        }
+
+        /* Venstre seksjon (Om meg) */
+        .container {
+            width: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f9fafc;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .container img {
+            width: 220px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        /* Høyre seksjon (Favorittrestauranter) */
+        .sidebar {
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #f9fafc;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        a {
+            color: #3182ce;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Tabell med rundede hjørner */
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 10px;
+            font-size: 0.95em;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        tr:not(:last-child) td {
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #e2e8f0;
+            border-bottom: 1px solid #ccc;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <!-- TOPPRAD: overskriftene -->
+        <div class="top-row">
+            <div class="top-section">
+                <h1>Om meg</h1>
+            </div>
+            <div class="top-section">
+                <h2>Favorittrestauranter i Bergen</h2>
+            </div>
+        </div>
+
+        <!-- INNHOLD: to kolonner -->
+        <div class="content-row">
+            <!-- VENSTRE SIDE -->
+            <div class="container">
+                <img src="profilbilde.jpg" alt="Profilbilde">
+                <p>Hei! Jeg heter <strong>[Ditt navn]</strong>.</p>
+                <p>Jeg liker å lære nye ting, spesielt innen teknologi og kreative prosjekter.  
+                På fritiden bruker jeg gjerne tid på å utforske nye ideer og være med venner.</p>
+
+                <h3>Kontakt</h3>
+                <p>Du kan nå meg på:  
+                <a href="mailto:din.epost@eksempel.no">din.epost@eksempel.no</a></p>
+            </div>
+
+            <!-- HØYRE SIDE -->
+            <div class="sidebar">
+                <table>
+                    <tr>
+                        <th>Restaurant</th>
+                        <th>Favorittrett</th>
+                    </tr>
+                    <tr>
+                        <td>Colonialen</td>
+                        <td>Bakt torsk</td>
+                    </tr>
+                    <tr>
+                        <td>Lysverket</td>
+                        <td>Sjømat-tallerken</td>
+                    </tr>
+                    <tr>
+                        <td>Nama Sushi & Noodles</td>
+                        <td>Sashimi Deluxe</td>
+                    </tr>
+                    <tr>
+                        <td>Bare Vestland</td>
+                        <td>Reinskav</td>
+                    </tr>
+                    <tr>
+                        <td>Pygmalion Økocafé</td>
+                        <td>Vegetarburger</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
