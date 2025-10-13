@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Christian's Homepage!</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <div
+                    class="cube left"
+                    aria-label="Rotating cube left"
+                    role="img"
+                    tabindex="0"
+                >
+                    <div class="cfan front"></div>
+                    <div class="cfan back"></div>
+                    <div class="cfan right"></div>
+                    <div class="cfan left"></div>
+                    <div class="cfan top"></div>
+                    <div class="cfan bottom"></div>
+                </div>
+                <h1>
+                    Christian's<br />
+                    <span class="text-muted"> <em>aka:</em>  c-fan  </span>
+                    <br />Personal Homepage
+                </h1>
+                <div id="toggleBtn" onclick="toggleBackground()"></div>
+                <div
+                    class="cube right"
+                    aria-label="Rotating cube right"
+                    role="img"
+                    tabindex="0"
+                >
+                    <div class="tux front"></div>
+                    <div class="tux back"></div>
+                    <div class="tux right"></div>
+                    <div class="tux left"></div>
+                    <div class="tux top"></div>
+                    <div class="tux bottom"></div>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <a href="index.html"><button type="button">home</button></a>
+            <a href="stuffs.html"><button type="button">stuffs</button></a>
+            <a href="misc.html"><button type="button">misc</button></a>
+        </nav>
+
+        <main>
+            <h2>misc</h2>
+            <hr />
+            <p>some random links to cool stuff...</p>
+            <table class="qa links">
+                <tr>
+                    <th>Name of site:</th>
+                    <th>Description:</th>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://gog.com">Good Old Games</a>
+                    </td>
+                    <td>
+                        If you want to buy a game, old or new, check this site
+                        first!<br />Here you get a DRM free installer of your
+                        game that you can back up and use wherever and whenever.
+                        <br />
+                        No pesky "license" crap, you get to own it and not be
+                        afraid of getting rug-pulled and loose your game.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://css-tricks.com/">CSS-Tricks</a>
+                    </td>
+                    <td>
+                        A cool site if you need ideas for designing a
+                        webpage.<br />
+                        There is sooo much CSS can do these days that you had to
+                        use JavaScript to do before.<br />
+                        Besides, how <em>DO</em> you center a &lt;DIV&gt;?
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://demoscene.assembly.org/">Assembly</a>
+                    </td>
+                    <td>
+                        Want to get some cool ideas on super awesome projects to
+                        make?<br />Or just admire the incredible talent of
+                        coders that make stuff, often the hard way, just look
+                        cool?<br />Take a tour around this site to see some
+                        trule exceptional stuff, from the demo scene.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://deepsid.chordian.net/?file=/MUSICIANS/H/Hubbard_Rob/Monty_on_the_Run.sid&subtune=1&tab=csdb">DeepSID</a>
+                    </td>
+                    <td>One of my favourite things about the good old Commodore 64 was the music.<br>Here you can listen to many tens of thousands of SID songs.<br> The link goes directly to one of my all time favourite tunes!</be></td>
+                </tr>
+            </table>
+            <br><br>
+            <h2> some tunes I made long ago</h2>
+            <hr>
+            <p>The bass is way too weak on the <em>d'n'b</em> song "Make Our Stand". I never got profficent at mastering.</p>
+            <div id="split">
+                <div>
+                    <iframe src="https://www.youtube.com/embed/qTKqoDoeh8c" title="c-fan - Blasted" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/RNg83FfoZmE" title="c-fan - Softer Space" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <iframe class="bigframe" src="https://www.youtube.com/embed/0SbQ-7bKTeY" title="c-fan - Make Our Stand" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </main>
+
+        <footer>
+            <span class="copyleft-icon">󱤹</span>
+            <span class="footyear">2025</span> c-fan
+        </footer>
+        <script>
+            function toggleBackground() {
+                const body = document.body;
+                const button = document.getElementById("toggleBtn");
+
+                const currentBg = window.getComputedStyle(body).backgroundColor;
+
+                if (currentBg === "rgb(255, 250, 250)") {
+                    body.style.backgroundColor = "black";
+                    body.style.color = "snow";
+                    button.textContent = "";
+                } else {
+                    body.style.backgroundColor = "snow";
+                    body.style.color = "black";
+                    button.textContent = "";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Christian's Homepage!</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <div
+                    class="cube left"
+                    aria-label="Rotating cube left"
+                    role="img"
+                    tabindex="0"
+                >
+                    <div class="cfan front"></div>
+                    <div class="cfan back"></div>
+                    <div class="cfan right"></div>
+                    <div class="cfan left"></div>
+                    <div class="cfan top"></div>
+                    <div class="cfan bottom"></div>
+                </div>
+                <h1>
+                    Christian's<br />
+                    <span class="text-muted"> <em>aka:</em>  c-fan  </span>
+                    <br />Personal Homepage
+                </h1>
+                <div id="toggleBtn" onclick="toggleBackground()"></div>
+                <div
+                    class="cube right"
+                    aria-label="Rotating cube right"
+                    role="img"
+                    tabindex="0"
+                >
+                    <div class="tux front"></div>
+                    <div class="tux back"></div>
+                    <div class="tux right"></div>
+                    <div class="tux left"></div>
+                    <div class="tux top"></div>
+                    <div class="tux bottom"></div>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <a href="index.html"><button type="button">home</button></a>
+            <a href="stuffs.html"><button type="button">stuffs</button></a>
+            <a href="misc.html"><button type="button">misc</button></a>
+        </nav>
+
+        <main>
+            <h2>stuffs</h2>
+            <hr />
+            <p>some pocket handhelds...</p>
+            <div id="split">
+                <div>
+                    <h3>Miyoo mini</h3>
+                    <img
+                        class="img-size"
+                        src="img/miyoo.webp"
+                        alt="Miyoo Console"
+                    />
+                    <p>
+                        This is a little handheld device, reminicent of the old
+                        gameboy, only way smaller.<br />
+                        It runs linux, with a custom OS and emulates everything
+                        from 70's computers to the first Playstation.<br />
+                        It firts in my pocket, has a battery that lasts for many
+                        hours and keep me company!
+                    </p>
+                </div>
+                <div>
+                    <h3>AYN Thor</h3>
+                    <img
+                        class="img-size"
+                        src="img/aynthor.webp"
+                        alt="Miyoo Console"
+                    />
+                    <p>
+                        This is a bigger handheld device, reminicent of the
+                        Nintendo DS.<br />
+                        It runs android (sadly), and emulates everything from
+                        70's computers to Playstation 2, Wii, and even some
+                        Switch games.<br />
+                        It firts somewhat in my pocket, has a pretty good
+                        battery.<br /><br />I have pre-ordered it, waiting for
+                        it to turn up on my doorstep.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <span class="copyleft-icon">󱤹</span>
+            <span class="footyear">2025</span> c-fan
+        </footer>
+        <script>
+            function toggleBackground() {
+                const body = document.body;
+                const button = document.getElementById("toggleBtn");
+
+                const currentBg = window.getComputedStyle(body).backgroundColor;
+
+                if (currentBg === "rgb(255, 250, 250)") {
+                    body.style.backgroundColor = "black";
+                    body.style.color = "snow";
+                    button.textContent = "";
+                } else {
+                    body.style.backgroundColor = "snow";
+                    body.style.color = "black";
+                    button.textContent = "";
+                }
+            }
+        </script>
+    </body>
+</html>
