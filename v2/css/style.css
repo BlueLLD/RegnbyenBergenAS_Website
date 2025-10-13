@@ -281,6 +281,7 @@ h3 {
 p {
     padding: 0.5em;
     margin-left: 20px;
+    max-width: 600px;
 }
 
 footer {
@@ -289,6 +290,7 @@ footer {
     font-size: small;
     padding: 1em;
 }
+
 
 .vannvett {
     text-align: left;
@@ -567,4 +569,8 @@ main p {
     position: absolute;
     right: 20px;
     top: 20px;
+}
+
+.hjem-tekst p {
+margin: auto;
 }
