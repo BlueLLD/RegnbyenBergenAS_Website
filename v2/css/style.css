@@ -532,6 +532,7 @@ table .car_info :nth-child(3){
 
 .partner details p {
     font-size:medium;
+    margin: 20px auto;
     font-weight: normal;
 }
 
