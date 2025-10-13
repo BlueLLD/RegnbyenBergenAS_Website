@@ -126,8 +126,8 @@ data = {
         fixbil_partner:`Whether it's service, EU inspection or repair of your car, Fixbil is a good choice.<br>
                         With several workshops around Bergen, it's easy to find one that suits you.<br>
                         <a href="https://fixbil.no/">Click here for more about Fixbil</a>`,
-        bergem_kommune_partner:`Elsker å kaste penger på fiktive prosjekter. <br> Selvfølgelig ville de sponse våres fantastiske informasjonsside.
-                                <a href="https://www.bergen.kommune.no/">Klikk her for mer om Bergen Kommune</a>`,
+        bergem_kommune_partner:`Love throwing money at fictitious projects. <br> Of course they would sponsor our fantastic information site.
+                                <a href="https://www.bergen.kommune.no/">Click here for more about Bergen Municipality</a>`,
         BRGN_partner:`Fashion for both women and men.<br> Waterproof clothing, perfect for Bergen and western Norway. <br>
                       Great design and good quality.<br>
                       <a href="https://brgn.com/?srsltid=AfmBOorIKDScmoPWbzoNw_x6MOSeE3th5p2AhCWdSDFKb1yPkfB00KEW">Click here for more about BRGN</a>`,
