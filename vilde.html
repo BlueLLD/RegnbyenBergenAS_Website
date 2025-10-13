@@ -2,11 +2,11 @@
 <html lang="no">
 <head>
     <meta charset="UTF-8">
-    <title>. Om meg</title>
+    <title></a>Om meg</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #eef2f7;
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            background-color: #d9d9d9;
             color: #333;
             margin: 0;
             height: 100vh;
@@ -15,9 +15,9 @@
             align-items: center;
         }
 
-        /* Hovedlayout */
+        
         .main {
-            background-color: #fff;
+            background-color: #e4e3e3;
             padding: 50px 70px;
             border-radius: 16px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.15);
@@ -27,14 +27,6 @@
             align-items: center;
         }
 
-        /* Overskriftsrad (to kolonner, midtjustert tekst) */
-        .top-row {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            gap: 60px;
-            margin-bottom: 25px;
-        }
 
         .top-section {
             width: 450px;
@@ -42,32 +34,33 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 50px; /* sørger for samme høyde på overskriftene */
+            min-height: 50px; /
         }
 
         .top-section h1, .top-section h2 {
             margin: 0;
+            text-align: center;
             font-size: 1.8em;
         }
 
         .top-section h1 {
-            color: #2b6cb0;
+            color: #374e69;
         }
 
         .top-section h2 {
-            color: #2c5282;
+            color: #374e69;
         }
 
-        /* Innholdsraden (bilde og tabell) */
+      
         .content-row {
             display: flex;
             justify-content: center;
-            align-items: stretch; /* like høyde */
+            align-items: stretch; 
             gap: 60px;
             width: 100%;
         }
 
-        /* Venstre seksjon (Om meg) */
+    
         .container {
             width: 450px;
             display: flex;
@@ -81,15 +74,15 @@
         }
 
         .container img {
-            width: 220px;
-            height: 200px;
+            width: 240px;
+            height: 300px;
             object-fit: cover;
             border-radius: 12px;
             margin-bottom: 20px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.2);
         }
 
-        /* Høyre seksjon (Favorittrestauranter) */
+        
         .sidebar {
             min-width: 300px;
             display: flex;
@@ -102,7 +95,7 @@
         }
 
         a {
-            color: #3182ce;
+            color: #065dc1;
             text-decoration: none;
         }
 
@@ -110,7 +103,7 @@
             text-decoration: underline;
         }
 
-        /* Tabell med rundede hjørner */
+       
         table {
             width: 100%;
             border-collapse: separate;
@@ -137,40 +130,37 @@
             border-bottom: 1px solid #ccc;
         }
 
+        .bokser h1, h2 {
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
     <div class="main">
 
-        <!-- TOPPRAD: overskriftene -->
-        <div class="top-row">
-            <div class="top-section">
-                <h1>Om meg</h1>
-            </div>
-            <div class="top-section">
-                <h2>Favorittrestauranter i Bergen</h2>
-            </div>
-        </div>
 
         <!-- INNHOLD: to kolonner -->
         <div class="content-row">
             <!-- VENSTRE SIDE -->
             <div class="container">
-                <img src="profilbilde.jpg" alt="Profilbilde">
-                <p>Hei! Jeg heter <strong>[Ditt navn]</strong>.</p>
-                <p>Jeg liker å lære nye ting, spesielt innen teknologi og kreative prosjekter.  
-                På fritiden bruker jeg gjerne tid på å utforske nye ideer og være med venner.</p>
+                 <h1>Om meg</h1>
+                <img src="v2/images/people/Vilde.png" alt="Profilbilde">
+                <p>Hei! Jeg heter <strong>Vilde</strong>.</p>
+                <p>Jeg studerer informasjonsteknologi på Høgskulen Vestlandet.</p>
 
-                <h3>Kontakt</h3>
+                <h3>Kontakt:</h3>
                 <p>Du kan nå meg på:  
-                <a href="mailto:din.epost@eksempel.no">din.epost@eksempel.no</a></p>
+                <a href="mailto:din.epost@eksempel.no">vildekalsaas@regnbyen.no</a></p>
             </div>
 
             <!-- HØYRE SIDE -->
+             <div class="bokser">
             <div class="sidebar">
+                <h2>Favorittrestauranter i Bergen</h2>
                 <table>
                     <tr>
-                        <th>Restaurant</th>
+                        <th>Restaurant:</th>
                         <th>Favorittrett</th>
                     </tr>
                     <tr>
@@ -194,6 +184,7 @@
                         <td>Vegetarburger</td>
                     </tr>
                 </table>
+                </div>
             </div>
         </div>
     </div>
