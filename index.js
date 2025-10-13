@@ -20,7 +20,7 @@ var highlight_translated_elements = parseStringToBoolean(localStorage.getItem("h
  */
 function forAllTranslatables(callback,ln){
     for(const [key,text] of Object.entries(languages[ln || current_language])){
-        document.querySelectorAll(`[translation_key=${key}]`).forEach(element=>{
+        document.querySelectorAll(`[data-translation-key=${key}]`).forEach(element=>{
             callback(element,key,text)
         })
     }
