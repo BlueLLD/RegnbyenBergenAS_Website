@@ -40,17 +40,20 @@ function highlight(state){
 function loadLanguage(ln){
     localStorage.setItem("language",ln)
     forAllTranslatables((el,_,text)=>{
-        
+        if(text == "") {
+            el.style.color = "red"
+            return
+        }
         const sub_query = el.getAttribute("data-on-sub-elements")
         if(sub_query){
             el.querySelectorAll(sub_query).forEach(el=>{
                 el.innerHTML = text
-                highlight_translated_elements && (el.style.color = "red")
+                highlight_translated_elements && (el.style.color = "green")
             })
             return
         }
         el.innerHTML = text
-        highlight_translated_elements && (el.style.color = "red")
+        highlight_translated_elements && (el.style.color = "green")
     },ln)
 }
 function activateButtons(){
