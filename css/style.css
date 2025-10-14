@@ -6,6 +6,7 @@ html {
 body {
     font-family: 'UbuntuSansNerdFont', sans-serif;
     font-weight: normal;
+    font-size: 16px;
     background-color: var(--bg-dark);
     color: var(--text);
     letter-spacing: 0.12em;
@@ -664,4 +665,10 @@ margin: auto;
 .bil table tr:nth-child(even) td:nth-child(3), .bil table tr:nth-child(even) td:nth-child(2) {
     text-align: left;
     vertical-align: top;
+}
+
+.vannvett h2 {
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
 }
