@@ -154,7 +154,12 @@ data = {
                       <p>With us you will find tips for activities and products that help you get the best out of the city between the seven mountains. </p>
                       <p>We collaborate with local actors to make it easy to find the best the city has to offer - for both small and large and big.</p>
                       <p>Bergen is more than umbrellas and raincoats - it's a city full of life, warmth and adventure. Come with us out in the rain and we'll show you why!</p>`,
-    
+        
+        // ommoss.html
+        about_us_desc:"Besides our fantastic partners, we are the people behind the project Regnbyen Bergen AS.<br> Click on us to see our personal website, but note they are not related to this project.",
+        project_member:"Project member",
+        project_leader:"Project leader",
+
     },
     "no":{
         language:"Språk",
@@ -303,6 +308,10 @@ data = {
                       <p>Vi samarbeider med lokale akt&oslash;rer for &aring; gj&oslash;re det enkelt &aring; finne det beste byen har &aring; by p&aring; - for b&aring;de sm&aring; og store.</p>
                       <p>Bergen er mer enn paraplyer og regnkl&amp;r - det er en by full av liv, varme og eventyr. Bli med oss ut i regnet, s&aring; viser vi deg hvorfor!</p>`,
 
+        // ommoss.html
+        about_us_desc:"Foruten v&aring;res fantastiske partnere, er vi personene bak prosjekt Regnbyen Bergen AS.<br> Trykk p&aring; oss for &aring; se v&aring;res personlige hjemmeside, men merk de er ikke relatert til dette prosjektet.",
+        project_member:"Prosjektmedlem",
+        project_leader:"Prosjektleder",
 
         }
 
