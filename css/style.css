@@ -573,9 +573,19 @@ main p {
     z-index: 1000;
 }
 
+#theme_box{
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    z-index: 1000;
+}
+
+#theme_box button,
 #language_box button {
+    font-family: 'UbuntuSansNerdFont';
     background-color: var(--bg);
     border: 1px solid var(--border);
+    border-radius: 5px;
     color: var(--text);
     cursor: pointer;
 }
