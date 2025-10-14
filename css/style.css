@@ -301,20 +301,22 @@ footer {
     padding: 2rem;
     border: 1px solid var(--border);
 }
+
 .vannvett li {
     list-style-type: numeric;
-    margin-bottom: 2rem;
+    margin: 0 10px 2rem 10px;
+    
 }
 
 .vannvett li:last-child {
     margin-bottom: 0;
 }
 
-.vannvett h4 {
+.vannvett h2 {
     margin-bottom: 1rem;
     font-size: 1.2rem;
     padding-left:2rem;
-    font-weight: 700;
+    font-weight: bolder;
     border-bottom: 1px solid var(--border);
 }
 
@@ -667,12 +669,6 @@ margin: auto;
     vertical-align: top;
 }
 
-.vannvett h2 {
-    font-size: 1rem;
-    font-weight: bolder;
-    margin-bottom: 1rem;
-}
-
 main.landingpage {
     background: none;
     margin: 0;
@@ -688,4 +684,9 @@ fieldset {
 
 fieldset legend {
     visibility: hidden;
+}
+
+ol.vannvett li div {
+    width: 80%;
+    margin: auto;
 }
