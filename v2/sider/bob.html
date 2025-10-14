@@ -5,20 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Regnbyen Bergen AS</title><link rel="icon" type="image/x-icon" href="favicon.ico">
-        
         <link rel="stylesheet" href="../css/reset.css">
         <link rel="stylesheet" href="../css/font.css">
         <link rel="stylesheet" href="../css/colors-light.css">
         <link rel="stylesheet" href="../css/colors-dark.css">
         <link rel="stylesheet" href="../css/style.css">
-        
         <script src="../js/languages.js"></script>
         <script src="../js/index.js"></script>
     </head>
     <body>
         <div id="language_box">
-            <button id="en">EN</button>
-            <button id="no">NO</button>
+            <button type="button" id="en">EN</button>
+            <button type="button" id="no">NO</button>
         </div>
         <header>
 <img class="logo" src="../images/logo.svg" alt="Regnbyen Bergen Logo">
@@ -26,7 +24,7 @@
     <div class="tagline" data-translation-key="slogan">tørre tips i en v&aring;t by</div>
         </header>
         <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776; Meny</label>  
+        <label for="menu-toggle" class="menu-icon">&#9776; Meny</label>
         <nav>
             <ul>
                 <li><a href="hjem.html" data-translation-key="home">Hjem</a></li>
@@ -41,8 +39,7 @@
 
         <main>
             <h1 data-translation-key="car_and_housing">Bolig og Bil</h1>
-                    <p> 
-                        <div data-translation-key="living_in_bergen">    
+                        <div data-translation-key="living_in_bergen">
                             Det å bo i Bergen kan være en utfordring når det kommer til regn og fuktighet.<br>
                             Vi tilbyr løsninger for å beskytte både boliger og biler mot vær og vind.
                         </div>
@@ -53,82 +50,83 @@
                             <li data-translation-key="workshop">Verksted</li>
                             <li data-translation-key="maintenance">Boligopppussing og vedlikehold</li>
                         </ul>
-                    </p>
             <section class="bil">
                 <h2 data-translation-key="cars_climate">Biler som passer klimaet</h2>
-                <p data-translation-key="car_models"> 
+                <p data-translation-key="car_models">
                     Her er noen bilmodeller som er godt tilegnet Regnbyen.
                 </p>
-                <table> 
+                <table>
                     <thead>
-                        <th data-translation-key="brand">Merke / Bilde</th>
-                        <th data-translation-key="modell">Modell / Fordeler</th>
-                        <th data-translation-key="price">Pris / Ulemper</th>
+                        <tr>
+                            <th scope="col" data-translation-key="brand">Merke / Bilde</th>
+                            <th scope="col" data-translation-key="modell">Modell / Fordeler</th>
+                            <th scope="col" data-translation-key="price">Pris / Ulemper</th>
+                        </tr>
                     </thead>
-                    <tr class="car_info">
-                        <td>Hyundai</td>
-                        <td>Kona Electric</td>
-                        <td>340000 kr</td>
-                        </tr>
-                        <tr>
+                    <tbody>
+                        <tr class="car_info">
+                            <td>Hyundai</td>
+                            <td>Kona Electric</td>
+                            <td>340000 kr</td>
+                            </tr>
+                            <tr>
                             <td><img src="/images/bobgalleri/hyundaikona.png" class="car_image" alt="Hyundai Kona"></td>
-                        <td data-translation-key="hyundai_pros">
-                            + Etablert modell som har vært brukt i Norge lenge, mange reservedeler, god serviceinfrastruktur.<br><br>
-                            + Meget godt utstyrsnivå i nyere modeller, god rekkevidde (WLTP ~ 500+ km for Long Range) i forhold til pris.<br><br>
-                            + Komfort i by og på vei, relativt god plass til bagasje og passasjerer, brukbar totalvne.<br><br>
-                            + Prisnivået gjør at mange kan få “mye bil for pengene”.<br><br>
-                            + Forvarming, moderat strømforbruk, og gode vinteregenskaper med riktige dekk.</td>
-                        <td data-translation-key="hyundai_cons">- Hurtigladingstopp (maks effekt) er ikke like høy som de aller raskeste elbilene. <br><br>
-                            - Når man velger større hjul eller mer utstyr, drar vekten og forbruket opp, rekkevidden faller mer vinterstid. <br><br>
-                            - Ikke firehjulsdrift (for de fleste varianter) - begrenser grepet på veldig isete / snødekte veier. <br><br>
-                            - Innvendig materialfølelse kan være noe enklere enn hos premiummerker. <br><br>
-                            - Skjerm-menyer etc. blir av noen opplevd som mindre intuitive.</td>
-                    </tr>
-                    <tr class="car_info">
-                        <td>Volvo</td>
-                        <td>EX30</td>
-                        <td>345900 kr</td>
+                            <td data-translation-key="hyundai_pros">
+                                + Etablert modell som har vært brukt i Norge lenge, mange reservedeler, god serviceinfrastruktur.<br><br>
+                                + Meget godt utstyrsnivå i nyere modeller, god rekkevidde (WLTP ~ 500+ km for Long Range) i forhold til pris.<br><br>
+                                + Komfort i by og på vei, relativt god plass til bagasje og passasjerer, brukbar totalvne.<br><br>
+                                + Prisnivået gjør at mange kan få “mye bil for pengene”.<br><br>
+                                + Forvarming, moderat strømforbruk, og gode vinteregenskaper med riktige dekk.</td>
+                            <td data-translation-key="hyundai_cons">- Hurtigladingstopp (maks effekt) er ikke like høy som de aller raskeste elbilene. <br><br>
+                                - Når man velger større hjul eller mer utstyr, drar vekten og forbruket opp, rekkevidden faller mer vinterstid. <br><br>
+                                - Ikke firehjulsdrift (for de fleste varianter) - begrenser grepet på veldig isete / snødekte veier. <br><br>
+                                - Innvendig materialfølelse kan være noe enklere enn hos premiummerker. <br><br>
+                                - Skjerm-menyer etc. blir av noen opplevd som mindre intuitive.</td>
                         </tr>
-                        <tr>
-                            <td><img src="/images/bobgalleri/volvoex.png" class="car_image" alt="Volvo EX30"></td>
-                        <td data-translation-key="volvo_pros">+ Meget kompakt SUV som er lettmanøvrert i by, smale gater, trange parkeringsplasser.<br><br>
-                            + Moderne sikkerhetsfunksjoner og Volvo-kvalitet.<br><br>
-                            + Gode vinterhjulpakker finnes fra fabrikken - bedre grep og trygghet. <br><br>
-                            + Valgbar kjøremodus gir fleksibilitet etter vær og bruk. <br><br>
-                            + Lavere forbruk pga mindre vekt/størrelse enn store SUVer (i by & kupert terreng).</td>
-                        <td data-translation-key="volvo_cons">- Begrenset plass i noen varianter; for stor familie kan det bli trangt.<br><br>
-                            - Rekkevidden synker merkbart ved kaldt vær, og batterioppvarming blir viktig.<br><br>
-                            - Vinterdekk / piggfrie vs piggdekk-valg blir viktig.<br><br>
-                            - For de som kjører mye motorvei: tilbudet her ikke like optimalt som større elSUVer.<br><br>
-                            - Pris med alt ekstra (hjulpakke, utstyr) kan komme oppover.</td>
-                    </tr>
-                    <tr class="car_info">
-                        <td>Tesla</td>
-                        <td>Model Y Long Range RWD</td>
-                        <td>610000 kr</td>
+                        <tr class="car_info">
+                            <td>Volvo</td>
+                            <td>EX30</td>
+                            <td>345900 kr</td>
+                            </tr>
+                            <tr>
+                                <td><img src="/images/bobgalleri/volvoex.png" class="car_image" alt="Volvo EX30"></td>
+                            <td data-translation-key="volvo_pros">+ Meget kompakt SUV som er lettmanøvrert i by, smale gater, trange parkeringsplasser.<br><br>
+                                + Moderne sikkerhetsfunksjoner og Volvo-kvalitet.<br><br>
+                                + Gode vinterhjulpakker finnes fra fabrikken - bedre grep og trygghet. <br><br>
+                                + Valgbar kjøremodus gir fleksibilitet etter vær og bruk. <br><br>
+                                + Lavere forbruk pga mindre vekt/størrelse enn store SUVer (i by &amp; kupert terreng).</td>
+                            <td data-translation-key="volvo_cons">- Begrenset plass i noen varianter; for stor familie kan det bli trangt.<br><br>
+                                - Rekkevidden synker merkbart ved kaldt vær, og batterioppvarming blir viktig.<br><br>
+                                - Vinterdekk / piggfrie vs piggdekk-valg blir viktig.<br><br>
+                                - For de som kjører mye motorvei: tilbudet her ikke like optimalt som større elSUVer.<br><br>
+                                - Pris med alt ekstra (hjulpakke, utstyr) kan komme oppover.</td>
                         </tr>
-                        <tr>
-                            <td><img src="/images/bobgalleri/teslay.png" alt="Tesla Y" class="car_image"></td>
-                        <td data-translation-key="tesla_pros">+ God ladekapasitet og tilgang til Supercharger-nettverket som gjør langkjøring mer praktisk, også over fjell og mellom fjorder.<br><br>
-                            + Firehjulsdrift-versjoner gir bedre grep vinterstid (snø & is).<br><br>
-                            + Meget god varme, komfort, og forvarming gjør vinterkjøring mer komfortabel.<br><br>
-                            + God bagasjeplass og praktisk SUV-form kombinert med elbilfordeler.</td>
-                        <td data-translation-key="tesla_cons">- Høyere pris sammenlignet med mange andre elbiler.<br><br>
-                            - Kvalitetskontroll og byggekvalitet har vært kritisert i enkelte tilfeller.<br><br>
-                            - Enkelte opplever at interiørmaterialene ikke er like luksuriøse som hos premiummerker.<br><br>
-                            - Størrelsen kan gjøre den mindre smidig i trange bymiljøer.</td>
-
-                    </tr>
+                        <tr class="car_info">
+                            <td>Tesla</td>
+                            <td>Model Y Long Range RWD</td>
+                            <td>610000 kr</td>
+                            </tr>
+                            <tr>
+                                <td><img src="/images/bobgalleri/teslay.png" alt="Tesla Y" class="car_image"></td>
+                            <td data-translation-key="tesla_pros">+ God ladekapasitet og tilgang til Supercharger-nettverket som gjør langkjøring mer praktisk, også over fjell og mellom fjorder.<br><br>
+                                + Firehjulsdrift-versjoner gir bedre grep vinterstid (snø &amp; is).<br><br>
+                                + Meget god varme, komfort, og forvarming gjør vinterkjøring mer komfortabel.<br><br>
+                                + God bagasjeplass og praktisk SUV-form kombinert med elbilfordeler.</td>
+                            <td data-translation-key="tesla_cons">- Høyere pris sammenlignet med mange andre elbiler.<br><br>
+                                - Kvalitetskontroll og byggekvalitet har vært kritisert i enkelte tilfeller.<br><br>
+                                - Enkelte opplever at interiørmaterialene ikke er like luksuriøse som hos premiummerker.<br><br>
+                                - Størrelsen kan gjøre den mindre smidig i trange bymiljøer.</td>
+                        </tr>
+                    </tbody>
                 </table>
             </section>
 
 
         <section class="verksted">
                     <h3 data-translation-key="workshop">Verksted</h3>
-                    <p> 
                         <div data-translation-key="fixbil"><em>Fixbil</em> er den mest praktiske måten å ordnet eller sjekket bilen sin på.<br><br> Verkstedene finner du i:</div>
                         <ul class="verksted_list">
-                            <li><a href="https://fixbil.no/verksteder/arna/">Arna</a></a></li>
+                            <li><a href="https://fixbil.no/verksteder/arna/">Arna</a></li>
                             <li><a href="https://fixbil.no/verksteder/fixbil-asane/">Åsane</a></li>
                             <li><a href="https://fixbil.no/verksteder/damsgaard-karosseri/">Damsgård</a></li>
                             <li><a href="https://fixbil.no/verksteder/fana-bilverksted/">Fana</a></li>
@@ -143,7 +141,7 @@
                         <div data-translation-key="at_fixbil">
                             Hos Fixbil finner du alt du skulle trenge til vedlikehold og sjekking av bilen din.<br> Vi er veldig stolt av ha de som partner. <br><br>
                         </div>
-                        <a href="https://fixbil.no/" data-translation-key="fixbil_webpage"><b>Fixbil</b> sin hovedside.</a></p>
+                        <a href="https://fixbil.no/" data-translation-key="fixbil_webpage"><b>Fixbil</b> sin hovedside.</a>
             </section>
 
             <section class="bolig">
@@ -162,11 +160,8 @@
                 </details>
                 <details>
                     <summary data-translation-key="what_paint">Hvilken maling bør jeg bruke?</summary>
-                        <p data-translation-key="what_paint_answer">Velg en maling utviklet for kystklima og mye nedbør. Vi anbefaler <a href="#">ByggPartner AS</a> sine løsninger som er testet for ekstremvær.</p>
-                        <br><br>
+                        <p data-translation-key="what_paint_answer">Velg en maling utviklet for kystklima og mye nedbør. Vi anbefaler ByggPartner AS sine løsninger som er testet for ekstremvær.</p>
                         <p data-translation-key="for_more_info">For mer informasjon, kontakt vår samarbeidspartner <a href="https://byggpartner.no/">ByggPartner AS</a> for råd og produkter som passer ditt hjem i Bergen.</p>
-
-                        </p>
                 </details>
             </section>
 

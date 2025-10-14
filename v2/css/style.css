@@ -280,7 +280,7 @@ h3 {
 
 p {
     padding: 0.5em;
-    margin-left: 20px;
+    margin: auto;
     max-width: 600px;
 }
 
@@ -569,6 +569,14 @@ main p {
     position: absolute;
     right: 20px;
     top: 20px;
+    z-index: 1000;
+}
+
+#language_box button {
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    cursor: pointer;
 }
 
 .hjem-tekst p {

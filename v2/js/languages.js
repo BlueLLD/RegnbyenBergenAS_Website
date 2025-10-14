@@ -152,7 +152,7 @@ data = {
         pictures:"Bilder",
         puddles:"Sølepytter",
         car_and_housing:"Bolig og Bil",
-        water_saftey:"Vanvett",
+        water_saftey:"Vannvett",
 
         slogan:"Tørre tips i en våt by",
         
