@@ -315,6 +315,11 @@ footer {
 .vannvett h2 {
     margin-bottom: 1rem;
     font-size: 1.2rem;
+    color: var(--text-white);
+    text-shadow:    1px 1px 3px black,
+                    1px -1px 3px black,
+                    -1px 1px 3px black,
+                    -1px -1px 3px black;
     padding-left:2rem;
     font-weight: bolder;
     border-bottom: 1px solid var(--border);
@@ -617,7 +622,7 @@ margin: auto;
     background-color: var(--bg-light);
 }
 .soelepytter table a {
-    color: var(--text);
+    color: var(--text-white);
     text-decoration: none;
     font-weight: bolder;
     text-shadow:    1px 1px 3px black,
