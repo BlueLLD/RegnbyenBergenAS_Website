@@ -146,6 +146,14 @@ data = {
         quantity_is_a_factor:"Quantity is a factor here. <br> Lots of ponds all around, all the way.",
         wet_and_muddy:"Wet and muddy. <br> What's not to love? <br> Always fun to kick a ball around while the water splashes!",
         nice_view:"Very nice views up the bends. Including lots of pretty ladies on the road.",
+
+        // hjem.html
+        home_content:`<h1>Regnbyen Bergen AS <br><br>- For those with wet socks <wbr> and big dreams -</h1>
+                      <p> It often rains in Bergen, but we think it only makes the city even more magical.</p>
+                      <p>We at Regnbyen Bergen AS want to show you the sun in the rain - the colorful experiences, the hidden gems and everything that makes Bergen unique.</p>
+                      <p>With us you will find tips for activities and products that help you get the best out of the city between the seven mountains. </p>
+                      <p>We collaborate with local actors to make it easy to find the best the city has to offer - for both small and large and big.</p>
+                      <p>Bergen is more than umbrellas and raincoats - it's a city full of life, warmth and adventure. Come with us out in the rain and we'll show you why!</p>`,
     
     },
     "no":{
@@ -288,5 +296,14 @@ data = {
         wet_and_muddy:"Vått og gjørmette. <br> Hva er det ikke å elske? <br> Alltid gøy å sparke litt ball mens vannet spruter!",
         nice_view:"Veldig fin utsikt oppover svingene. Ikludert mye finne dammer på veien.",
 
-                        }
+        home_content:`<h1>Regnbyen Bergen AS <br><br>- For de med bl&oslash;te sokker <wbr> og store dr&oslash;mmer -</h1>
+                      <p> I Bergen regner det ofte, men vi mener det bare gj&oslash;r byen enda mer magisk.</p>
+                      <p>Vi i Regnbyen Bergen AS vil vise deg sola i regnet - de fargerike opplevelsene, de skjulte perlene og alt det som gj&oslash;r Bergen unik.</p>
+                      <p>Hos oss finner du tips til aktiviteter og produkter som hjelper deg med &aring; f&aring; det beste ut av byen mellom de syv fjell. </p>
+                      <p>Vi samarbeider med lokale akt&oslash;rer for &aring; gj&oslash;re det enkelt &aring; finne det beste byen har &aring; by p&aring; - for b&aring;de sm&aring; og store.</p>
+                      <p>Bergen er mer enn paraplyer og regnkl&amp;r - det er en by full av liv, varme og eventyr. Bli med oss ut i regnet, s&aring; viser vi deg hvorfor!</p>`,
+
+
+        }
+
 }
