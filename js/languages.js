@@ -137,6 +137,16 @@ data = {
         byggpartner_partner:`Renovation, renovation and home styling.<br> Great for those who need help with housing. <br>Project gallery on their website.<br>
                              <a href="https://bpvest.no/">Click here for more about Byggpartner</a>`,
 
+        // soel.html
+        best_puddles:"<b>Here are the best saddle cleaners in Bergen!</b><br><br> An overview of the most popular saddle cleaners,<br> ranked by our expert panel of users aged from 4 to 82.<br>",
+        where:"Where",
+        what:"What",
+        water_and_sand:"Vann og sand i skj&oslash;nn forening.<br> Perfekt til å bygge sandslott!",
+        big_puddles:"Large ponds! <br> At best, you can bring a small rubber boat with you.",
+        quantity_is_a_factor:"Quantity is a factor here. <br> Lots of ponds all around, all the way.",
+        wet_and_muddy:"Wet and muddy. <br> What's not to love? <br> Always fun to kick a ball around while the water splashes!",
+        nice_view:"Very nice views up the bends. Including lots of pretty ladies on the road.",
+    
     },
     "no":{
         language:"Språk",
@@ -268,6 +278,15 @@ data = {
                             <a href="https://www.visitbergen.com/">Klikk her for mer om Visit Bergen</a>`,
         byggpartner_partner:`Opppussing, renovering og boligstyling.<br> Fint for deg som trenger hjelp til bolig. <br>Prosjektgalleri inne på hjemmesiden deres.<br>
                             <a href="https://bpvest.no/">Klikk her for mer om Byggpartner</a>`,
+        // soel.html
+        best_puddles:"<b>Her er de beste s&oslash;lepyttene i Bergen!</b><br><br> En oversikt over de mest populære s&oslash;lepytterne,<br> rangert av vårt ekspertpanel av brukere i en alder fra 4 til 82 år.<br>",
+        where:"Hvor",
+        what:"Hva",
+        water_and_sand:"Vann og sand i skj&oslash;nn forening.<br> Perfekt til å bygge sandslott!",
+        big_puddles:"Store dammer! <br> I beste fall kan du ta med deg en liten gummibåt.",
+        quantity_is_a_factor:"Kvantum er en faktoer her. <br> Mye dammer rundt om kring, alle veier.",
+        wet_and_muddy:"Vått og gjørmette. <br> Hva er det ikke å elske? <br> Alltid gøy å sparke litt ball mens vannet spruter!",
+        nice_view:"Veldig fin utsikt oppover svingene. Ikludert mye finne dammer på veien.",
 
-    }
+                        }
 }
