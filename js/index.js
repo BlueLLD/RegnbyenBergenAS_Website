@@ -36,12 +36,10 @@ function forAllTranslatables(callback,ln){
 function toggleHighlight(){   
     highlight_translated_elements = !highlight_translated_elements  
     localStorage.setItem("highlight",parseBooleanToString(highlight_translated_elements)) 
-    highlight(highlight_translated_elements)
+    findMissingKeys()
+    if(!highlight_translated_elements) forAllTranslatables(el=>el.style.color = "")
 }
 
-function highlight(state){
-    forAllTranslatables(el=>el.style.color = state ? "red" : "")
-}
 
 function findMissingKeys(){
     for(const element of document.querySelectorAll(`[data-translation-key]`)){
@@ -49,6 +47,13 @@ function findMissingKeys(){
         for(const [language,translations] of Object.entries(languages)){
             if(translations[translation_key] == undefined || translations[translation_key] == ""){
                 console.log(`Missing translation for ${translation_key} on ${language}` )
+                if(highlight_translated_elements){
+                    element.style.color = "yellow"
+                    if(current_language == language)
+                        element.style.color = "red"
+                }
+            }else if(highlight_translated_elements){
+                element.style.color = "green"
             }
         }
     }
@@ -57,11 +62,9 @@ function findMissingKeys(){
 
 function loadLanguage(ln){
     localStorage.setItem("language",ln)
+    current_language = ln
     forAllTranslatables((el,_,text)=>{
-        if(text == "") {
-            el.style.color = "red"
-            return
-        }
+        if(text == "") return
         const sub_query = el.getAttribute("data-on-sub-elements")
         if(sub_query){
             el.querySelectorAll(sub_query).forEach(el=>{
@@ -73,6 +76,7 @@ function loadLanguage(ln){
         el.innerHTML = text
         highlight_translated_elements && (el.style.color = "green")
     },ln)
+    findMissingKeys()
 }
 function activateButtons(){
     const england_button = document.getElementById("en")
@@ -99,7 +103,6 @@ const light_style_sheet = style_sheets.find(v=>v.href.includes("light.css"))
 
 document.addEventListener("DOMContentLoaded",()=>{
     activateButtons()
-    highlight(highlight_translated_elements)
     loadLanguage(current_language)
     findMissingKeys()
     setUseDarkMode(use_dark_mode)
