@@ -665,3 +665,9 @@ margin: auto;
     text-align: left;
     vertical-align: top;
 }
+
+.vannvett h2 {
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
