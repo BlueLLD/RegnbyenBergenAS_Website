@@ -672,3 +672,20 @@ margin: auto;
     font-weight: bolder;
     margin-bottom: 1rem;
 }
+
+main.landingpage {
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+fieldset {
+    box-sizing: border-box;
+    height: fit-content;
+    border:none;
+}
+
+fieldset legend {
+    visibility: hidden;
+}
