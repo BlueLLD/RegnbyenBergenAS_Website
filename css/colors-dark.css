@@ -4,6 +4,7 @@
     --bg-light: hsl(220 53% 10%);
     --text: hsl(219 100% 100%);
     --text-invert: hsl(219 100% 0%);
+    --text-white:hsl(232 100% 100%);
     --text-muted: hsl(219 60% 74%);
     --highlight: hsl(220 32% 43%);
     --border: hsl(220 41% 32%);
