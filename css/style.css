@@ -624,7 +624,10 @@ margin: auto;
 
 .bil table td {
     border: 1px solid var(--border);
+    width: calc(100% / 3);
 }
+
+
 
 
 
